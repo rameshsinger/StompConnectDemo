@@ -1,12 +1,18 @@
 
 <div>
   <button type="button" (click)="connectClicked()">Connect</button>
-  <button type="button" (click)="disconnectClicked()">Disconnect</button>
+  <!-- <button type="button" (click)="disconnectClicked()">Disconnect</button> -->
 </div>
 
 <div>
-  <button type="button" (click)="startClicked()">Start listening</button>
-  <button type="button" (click)="stopClicked()">Stop listening</button>
+  <!-- <button type="button" (click)="stopClicked()">Stop listening</button> -->
+  <div>Sender User ID</div>
+  <input type="text" [(ngModel)]="sessionId"/>
+  <div>Receiver User ID</div>
+  <input type="text" [(ngModel)]="receiverId"/>
+  <div>Message</div>
+  <input type="text" [(ngModel)]="messageText"/>
+  <button type="button" (click)="startClicked()">send Message</button>
 </div>
 
 <div>

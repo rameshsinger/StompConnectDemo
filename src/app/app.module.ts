@@ -1,18 +1,18 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {NotificationsComponent} from "./notifications/notifications.component";
-import { NotificationsRxComponent } from './notifications-rx/notifications-rx.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NotificationsComponent,
-    NotificationsRxComponent
+    NotificationsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
   ],
