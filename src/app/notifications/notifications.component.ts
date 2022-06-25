@@ -24,7 +24,7 @@ export class NotificationsComponent {
       //Stomp config
       this.client = new StompJs.Client({
         //Get URL from host
-        webSocketFactory: () => new SockJS('http://143.110.255.122:8762/notifications/?token='),
+        webSocketFactory: () => new SockJS('https://pinch.net.in:8762/notifications/?token='),
         debug: (msg: string) => console.log(msg)
       });
 
